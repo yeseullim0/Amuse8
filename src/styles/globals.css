@@ -1,0 +1,17 @@
+@import '@fontsource/noto-sans-kr/400.css';
+@import '@fontsource/noto-sans-kr/500.css';
+@import '@fontsource/noto-sans-kr/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Pretendard', 'Noto Sans KR', system-ui, sans-serif;
+    }
+}
+
+.container {
+    @apply mx-auto px-4 md:px-6 lg:px-8;
+}
