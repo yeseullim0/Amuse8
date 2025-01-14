@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import notebookImage from '../../../assets/images/notebook.png';
-import videoFile from '../../../assets/videos/file.mp4';
-import videoExtension from '../../../assets/videos/extension.mp4';
+import notebookImage from '../../../../public/images/notebook.png';
+import videoFile from '../../../../public/videos/file.mp4';
+import videoExtension from '../../../../public/videos/extension.mp4';
 
 const FeaturesSection = () => {
   const [firstRef, firstInView] = useInView({

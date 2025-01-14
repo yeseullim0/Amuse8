@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import LandingVideo from "../../../assets/videos/Landing.mp4";
+import LandingVideo from "../../../../public/videos/Landing.mp4";
 
 const HeroSection = () => {
   const scrollToNext = () => {

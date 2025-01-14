@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import blockImage from '../../../assets/images/block.jpg';
+import blockImage from '../../../../public/images/block.jpg';
 const EndingSection = () => {
   return (
     <section className="relative w-full h-screen">

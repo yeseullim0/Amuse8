@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Rocket, Target, Globe, Star, Code, ExternalLink } from 'lucide-react';
-import companyImage from '../../assets/images/Company.jpg';
-import amuseLogo from '../../assets/images/Amuse8.png';
+import companyImage from '../../../public/images/Company.jpg';
+import amuseLogo from '../../../public/images/Amuse8.png';
 
 const CompanyPage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
