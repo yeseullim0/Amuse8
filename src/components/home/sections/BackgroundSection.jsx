@@ -173,84 +173,97 @@ const BackgroundSection = () => {
            </motion.div>
 
            {/* 손실 카드 섹션 */}
-           <motion.h3 
-                className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12"
-                initial={{ opacity: 0, y: 20 }}
-                animate={secondInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5 }}
-            >
-                비효율적인 자료 관리가 가져오는 손실
-            </motion.h3>
+           {/* 손실 카드 섹션 */}
+<motion.h3 
+    className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12"
+    initial={{ opacity: 0, y: 20 }}
+    animate={secondInView ? { opacity: 1, y: 0 } : {}}
+    transition={{ duration: 0.5 }}
+>
+    비효율적인 자료 관리가 가져오는 손실
+</motion.h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-                {
-                image: temporalImage,
-                title: "시간적 손실",
-                description: "주 평균 ",
-                emphasis: "18시간 이상",
-                suffix: " 낭비",
-                alt: "시간적 손실을 나타내는 이미지",
-                sourceLink: "https://kr.freepik.com/free-photo/top-view-wall-clocks-still-life_42952297.htm#fromView=search&page=5&position=3&uuid=ae4e38a0-77c2-4b2d-86b6-80adde2083bb&new_detail=true"
-                },
-                {
-                image: productivityImage,
-                title: "생산성 손실",
-                description: "업무 생산성 ",
-                emphasis: "20%",
-                suffix: " 감소",
-                alt: "생산성 손실을 나타내는 이미지",
-                sourceLink: "https://kr.freepik.com/free-photo/office-scene-top-view_1128145.htm#from_view=detail_alsolike"
-                },
-                {
-                image: costImage,
-                title: "비용적 손실",
-                description: "연간 약 ",
-                emphasis: "3천만원",
-                suffix: " 낭비",
-                alt: "비용적 손실을 나타내는 이미지",
-                sourceLink: "https://kr.freepik.com/free-photo/pile-coins-forming-graph_11433289.htm#fromView=search&page=1&position=21&uuid=016ba2ae-d84c-4243-a343-5a72e449ab0c&new_detail=true"
-                }
-            ].map((item, index) => (
-                <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={secondInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.2 * index }}
-                className="relative group overflow-hidden rounded-xl shadow-lg cursor-pointer"
-                >
-                {/* 이미지 */}
-                <div className="relative h-64 overflow-hidden">
-                    <img 
-                    src={item.image} 
-                    alt={item.alt}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    {/* 오버레이 */}
-                    <div className="absolute inset-0 bg-black/60 transition-opacity duration-300 group-hover:opacity-200" />
-                    {/* 출처 링크 */}
-                    <a 
-                        href={item.sourceLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="absolute bottom-2 right-2 text-xs text-gray-500/70 transition-colors duration-200 z-10"
-                    >
-                        출처 freepik
-                    </a>
-                </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+{[
+    {
+    image: temporalImage,
+    title: "시간적 손실",
+    description: "주 평균 ",
+    emphasis: "18시간 이상",
+    suffix: " 낭비",
+    alt: "시간적 손실을 나타내는 이미지",
+    sourceLink: "https://kr.freepik.com/free-photo/top-view-wall-clocks-still-life_42952297.htm"
+    },
+    {
+    image: productivityImage,
+    title: "생산성 손실",
+    description: "업무 생산성 ",
+    emphasis: "20%",
+    suffix: " 감소",
+    alt: "생산성 손실을 나타내는 이미지",
+    sourceLink: "https://kr.freepik.com/free-photo/office-scene-top-view_1128145.htm"
+    },
+    {
+    image: costImage,
+    title: "비용적 손실",
+    description: "연간 약 ",
+    emphasis: "3천만원",
+    suffix: " 낭비",
+    alt: "비용적 손실을 나타내는 이미지",
+    sourceLink: "https://kr.freepik.com/free-photo/pile-coins-forming-graph_11433289.htm"
+    }
+].map((item, index) => (
+    <motion.div
+    key={index}
+    initial={{ opacity: 0, y: 20 }}
+    animate={secondInView ? { opacity: 1, y: 0 } : {}}
+    transition={{ duration: 0.5, delay: 0.2 * index }}
+    className="relative overflow-hidden rounded-xl shadow-lg"
+    >
+    {/* 이미지 */}
+    <div className="relative h-64 overflow-hidden">
+        <motion.img 
+        src={item.image} 
+        alt={item.alt}
+        className="w-full h-full object-cover"
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+        />
+        {/* 오버레이 */}
+        <div className="absolute inset-0 bg-black/60" />
+        {/* 출처 링크 */}
+        <a 
+            href={item.sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute bottom-2 right-2 text-xs text-gray-500/70 z-10"
+        >
+            출처 freepik
+        </a>
+    </div>
 
-                {/* 텍스트 오버레이 */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white">
-                    <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
-                    <p className="text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {item.description}
-                    <span className="text-red-300 font-bold">{item.emphasis}</span>
-                    {item.suffix}
-                    </p>
-                </div>
-                </motion.div>
-            ))}
-            </div>
+    {/* 텍스트 오버레이 - 스크롤 기반 애니메이션 */}
+    <motion.div 
+        className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white"
+        initial={{ opacity: 0 }}
+        animate={secondInView ? { opacity: 1 } : {}}
+        transition={{ duration: 0.5, delay: 0.3 + (0.2 * index) }}
+    >
+        <h4 className="text-2xl font-bold mb-2">{item.title}</h4>
+        <motion.p 
+            className="text-lg"
+            initial={{ opacity: 0, y: 10 }}
+            animate={secondInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.4 + (0.2 * index) }}
+        >
+            {item.description}
+            <span className="text-red-300 font-bold">{item.emphasis}</span>
+            {item.suffix}
+        </motion.p>
+    </motion.div>
+    </motion.div>
+))}
+</div>
          </motion.div>
        </div>
      </div>
