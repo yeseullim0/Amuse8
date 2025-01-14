@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Rocket, Target, Globe, Star, Code, ExternalLink } from 'lucide-react';
-import companyImage from '../../assets/images/Company.jpg';
-import amuseLogo from '../../assets/images/Amuse8.png';
+
 
 const CompanyPage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -29,7 +28,7 @@ const CompanyPage = () => {
         {/* 배경 이미지 */}
         <div className="absolute inset-0">
             <img 
-            src={companyImage} 
+            src="src/assets/images/Company.jpg" 
             alt="Company Background" 
             className="w-full h-full object-cover"
             />
@@ -92,7 +91,7 @@ const CompanyPage = () => {
                 viewport={{ once: true }}
               >
                 <img 
-                  src={amuseLogo} 
+                  src="src/assets/images/Amuse8.png" 
                   alt="Amuse8 Logo" 
                   className="w-full h-auto"
                 />
