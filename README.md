@@ -29,14 +29,10 @@ npm run dev -- --host
 ```
 
 ## 프로젝트 구조
-src/
-├── assets/          # 이미지, 비디오 등 정적 파일
-│   ├── images/
-│   └── videos/
-├── components/      # 리액트 컴포넌트
-│   ├── common/      # 공통 컴포넌트 (Header, Footer, Layout)
-│   └── home/        # 홈페이지 관련 컴포넌트
-│   │  └── sections/
-|   └── legal       # 서비스 이용약관, 개인정보처리방침
-├── pages/          # 페이지 컴포넌트
-└── styles/         # 전역 스타일
+```markdown
+![프로젝트 구조조](./src/assets/images/structure.png)
+
+## 주요 기능
+- **반응형 디자인**: 모바일, 태블릿, 데스크톱에 최적화된 디자인
+- **스크롤 기반 애니메이션**: 스크롤에 따라 동적으로 변화하는 애니메이션
+- **페이지 라우팅**: React Router를 이용한 페이지 간 이동
