@@ -12,9 +12,9 @@ import {
  BookOpen
 } from 'lucide-react';
 import PropTypes from 'prop-types';
-import temporalImage from '../../../assets/images/temporal.jpg';
-import productivityImage from '../../../assets/images/productivity.jpg';
-import costImage from '../../../assets/images/cost.jpg';
+import temporalImage from '../../../../assets/images/temporal.jpg';
+import productivityImage from '../../../../assets/images/productivity.jpg';
+import costImage from '../../../../assets/images/cost.jpg';
 
 const FloatingIcon = ({ children, posX, posY }) => {
  const randomDuration = 5 + Math.random() * 3;
