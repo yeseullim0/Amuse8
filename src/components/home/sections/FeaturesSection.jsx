@@ -61,7 +61,7 @@ const FeaturesSection = () => {
                 한번의 드래그로<br />한번의 정리
               </h3>
               <p className="text-xl md:text-2xl text-gray-600">
-                AI가 드래그한 문서를 분석하고, 적합한 카테고리로 정리합니다.<br />
+                AI가 문서를 분석하고, 적합한 카테고리로 정리합니다.<br />
                 더 효율적인 작업 환경을 경험해보세요.
               </p>
             </motion.div>
