@@ -29,9 +29,8 @@ npm run dev -- --host
 ```
 
 ## 프로젝트 구조
-```markdown
-![프로젝트 구조조](./src/assets/images/structure.png)
-```
+![프로젝트 구조](./src/assets/images/structure.png)
+
 
 ## 주요 기능
 - **반응형 디자인**: 모바일, 태블릿, 데스크톱에 최적화된 디자인
