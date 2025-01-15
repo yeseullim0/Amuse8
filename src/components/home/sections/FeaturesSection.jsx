@@ -68,7 +68,7 @@ const FeaturesSection = () => {
       </div>
 
       {/* 두 번째 기능 */}
-      <div className="min-h-screen flex items-center">
+      <div className="min-h-screen flex items-center py-20">
         <div className="container mx-auto px-4">
           <motion.div
             ref={secondRef}
@@ -79,7 +79,7 @@ const FeaturesSection = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={secondInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8 }}
-              className="space-y-8 md:order-1"
+              className="space-y-8 md:order-1 mb-12 md:mb-0"
             >
               <h3 className="text-4xl md:text-5xl font-bold text-gray-900">
                 확장프로그램으로<br />한 번에 저장
@@ -105,7 +105,7 @@ const FeaturesSection = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={secondInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="w-full max-w-3xl mx-auto md:order-2 relative"
+                className="w-full max-w-3xl mx-auto md:order-2 relative mt-8 md:mt-0"
                 >
                     <img
                         src="/images/notebook.png"

@@ -91,7 +91,7 @@ const BackgroundSection = () => {
  return (
    <section className="bg-gradient-to-b from-gray-50 to-white -mt-16">
      {/* 첫 번째 섹션: 정보 과잉 문제 */}
-     <div className="h-screen flex items-center relative overflow-hidden">
+     <div className="min-h-screen py-20 md:py-32 flex items-center relative overflow-hidden">
        {/* 떠다니는 아이콘들 */}
        {floatingIcons.map((item, index) => (
          <FloatingIcon
@@ -147,11 +147,11 @@ const BackgroundSection = () => {
      </div>
 
      {/* 통합된 두 번째 섹션: 기업 실태 및 손실 */}
-     <div className="h-screen flex items-center">
+     <div className="min-h-screen py-20 md:py-32 flex items-center">
        <div className="container mx-auto px-4">
          <motion.div
            ref={secondRef}
-           className="max-w-4xl mx-auto space-y-16"
+           className="max-w-4xl mx-auto space-y-8 md:space-y-16"
          >
            {/* 기업 실태 */}
            <motion.div
@@ -170,7 +170,6 @@ const BackgroundSection = () => {
              </div>
            </motion.div>
 
-           {/* 손실 카드 섹션 */}
            {/* 손실 카드 섹션 */}
 <motion.h3 
     className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12"

@@ -30,7 +30,7 @@ const EndingSection = () => {
           href="https://kr.freepik.com/free-photo/small-cubes-held-hand_6404803.htm#fromView=image_search_similar&page=1&position=3&uuid=e0a7206d-19d0-412d-b631-dbd2ffc28948&new_detail=true"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-100 text-sm hover:text-gray-300 transition-colors duration-200"
+          className="text-gray-400 text-sm transition-colors duration-200"
         >
           출처 freepik
         </a>
