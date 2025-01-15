@@ -193,7 +193,7 @@ const BackgroundSection = () => {
     sourceLink: "https://kr.freepik.com/free-photo/top-view-wall-clocks-still-life_42952297.htm"
     },
     {
-    image: "/images/productivity.jpg',",
+    image: "/images/productivity.jpg",
     title: "생산성 손실",
     description: "업무 생산성 ",
     emphasis: "20%",
