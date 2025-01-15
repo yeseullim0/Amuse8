@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import notebookImage from '../../../../public/images/notebook.png';
-import videoFile from '../../../../public/videos/file.mp4';
-import videoExtension from '../../../../public/videos/extension.mp4';
+
 
 const FeaturesSection = () => {
   const [firstRef, firstInView] = useInView({
@@ -32,7 +30,7 @@ const FeaturesSection = () => {
             className="w-full max-w-3xl mx-auto relative"
             >
             <img
-                src={notebookImage}
+                src="/images/notebook.png"
                 alt="노트북 화면"
                 className="w-full h-auto rounded-lg shadow-xl "
             />
@@ -44,7 +42,7 @@ const FeaturesSection = () => {
                 playsInline
                 className="w-[526px] h-[303px] object-cover rounded-lg transform translate-y-[-22%]"
                 >
-                <source src={videoFile} type="video/mp4" />
+                <source src="/videos/file.mp4" type="video/mp4" />
                 </video>
             </div>
             </motion.div>
@@ -110,7 +108,7 @@ const FeaturesSection = () => {
                 className="w-full max-w-3xl mx-auto md:order-2 relative"
                 >
                     <img
-                        src={notebookImage}
+                        src="/images/notebook.png"
                         alt="노트북 화면"
                         className="w-full h-auto rounded-lg shadow-xl"
                     />
@@ -122,7 +120,7 @@ const FeaturesSection = () => {
                         playsInline
                         className="w-[526px] h-[303px] object-cover rounded-lg transform translate-y-[-22%]"
                         >
-                        <source src={videoExtension} type="video/mp4" />
+                        <source src="/videos/extension.mp4" type="video/mp4" />
                         </video>
                     </div>
             </motion.div>

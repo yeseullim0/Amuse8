@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import LandingVideo from "../../../../public/videos/Landing.mp4";
 
 const HeroSection = () => {
   const scrollToNext = () => {
@@ -36,7 +35,7 @@ const HeroSection = () => {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src={LandingVideo} type="video/mp4" />
+            <source src="/videos/Landing.mp4" type="video/mp4" />
           </video>
         </div>
         

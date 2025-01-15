@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Users, Rocket, Target, Globe, Star, Code, ExternalLink } from 'lucide-react';
-import companyImage from '../../../public/images/Company.jpg';
-import amuseLogo from '../../../public/images/Amuse8.png';
+
+
 
 const CompanyPage = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -20,7 +20,7 @@ const CompanyPage = () => {
   };
 
   // 파티클 효과를 위한 배열
-  const particles = Array.from({ length: 50 });
+  // const particles = Array.from({ length: 50 });
 
   return (
     <div className="bg-white">
@@ -29,7 +29,7 @@ const CompanyPage = () => {
         {/* 배경 이미지 */}
         <div className="absolute inset-0">
             <img 
-            src={companyImage} 
+            src="/images/Company.jpg"
             alt="Company Background" 
             className="w-full h-full object-cover"
             />
@@ -92,7 +92,7 @@ const CompanyPage = () => {
                 viewport={{ once: true }}
               >
                 <img 
-                  src={amuseLogo} 
+                  src="/images/Amuse8.png"
                   alt="Amuse8 Logo" 
                   className="w-full h-auto"
                 />

@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import LogoWhite from '../../../public/images/ceep_logo_wn.png';
-import LogoBlack from '../../../public/images/ceep_logo_bn.png';
+
 
 export const Header = () => {
   const [isHeroSection, setIsHeroSection] = useState(true);
@@ -74,7 +73,7 @@ export const Header = () => {
               }}
             >
               <img 
-                src={isHeroSection ? LogoWhite : LogoBlack} 
+                src={isHeroSection ? '/images/ceep_logo_wn.png' : '/images/ceep_logo_bn.png'}
                 alt="CEEP Logo" 
                 className="h-full w-auto object-contain transition-opacity duration-300"
               />

@@ -13,9 +13,7 @@ import {
 } from 'lucide-react';
 import PropTypes from 'prop-types';
 
-import temporalImage from '../../../../public/images/temporal.jpg';
-import productivityImage from '../../../../public/images/productivity.jpg';
-import costImage from '../../../../public/images/cost.jpg';
+
 
 const FloatingIcon = ({ children, posX, posY }) => {
  const randomDuration = 5 + Math.random() * 3;
@@ -186,7 +184,7 @@ const BackgroundSection = () => {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 {[
     {
-    image: temporalImage,
+    image: "/images/temporal.jpg",
     title: "시간적 손실",
     description: "주 평균 ",
     emphasis: "18시간 이상",
@@ -195,7 +193,7 @@ const BackgroundSection = () => {
     sourceLink: "https://kr.freepik.com/free-photo/top-view-wall-clocks-still-life_42952297.htm"
     },
     {
-    image: productivityImage,
+    image: "/images/productivity.jpg',",
     title: "생산성 손실",
     description: "업무 생산성 ",
     emphasis: "20%",
@@ -204,7 +202,7 @@ const BackgroundSection = () => {
     sourceLink: "https://kr.freepik.com/free-photo/office-scene-top-view_1128145.htm"
     },
     {
-    image: costImage,
+    image: "/images/cost.jpg",
     title: "비용적 손실",
     description: "연간 약 ",
     emphasis: "3천만원",

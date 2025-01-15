@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import blockImage from '../../../../public/images/block.jpg';
+
 const EndingSection = () => {
   return (
     <section className="relative w-full h-screen">
       {/* 배경 이미지 */}
       <div className="absolute inset-0">
         <img
-          src={blockImage}
+          src="/images/block.jpg"
           alt="Block background"
           className="w-full h-full object-cover"
         />
