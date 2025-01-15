@@ -27,9 +27,9 @@ npm run dev
 ```bash
 npm run dev -- --host
 ```
-s
+
 ## 프로젝트 구조
-![프로젝트 구조](/images/structure.png)
+![프로젝트 구조](./public/images/structure.png)
 
 
 ## 주요 기능
