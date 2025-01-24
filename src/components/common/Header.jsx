@@ -151,7 +151,7 @@ export const Header = () => {
             {/* 모바일 메뉴 버튼 */}
             <div className="flex items-center gap-4 md:hidden">
               <a 
-                href="https://ceep.kr/signin"
+                href="https://ceep.kr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`px-4 py-2 rounded-lg transition-all ${
