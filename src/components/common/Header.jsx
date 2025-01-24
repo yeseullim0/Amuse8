@@ -135,7 +135,7 @@ export const Header = () => {
                 회사
               </Link>
               <a 
-                href="https://ceep.kr/signin"
+                href="https://ceep.kr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`px-4 py-2 rounded-lg transition-all ${
