@@ -29,19 +29,24 @@ const CompanyPage = () => {
         {/* 배경 이미지 */}
         <div className="absolute inset-0">
             <img 
-            src="/images/Company.jpg"
-            alt="Company Background" 
-            className="w-full h-full object-cover"
+              src="/images/Company.jpg"
+              alt="Company Background" 
+              className="w-full h-full object-cover"
+              loading="eager"
+              fetchPriority="high"
+              width="1920"
+              height="1080"
+              decoding="async"
             />
             {/* 이미지 위에 오버레이 그라데이션 */}
             <div className="absolute inset-0 bg-gradient-to-b from-gray-900/70 to-gray-900/90" />
         </div>
         <div className="container mx-auto px-4 relative z-10 py-32">
-            <div className="max-w-4xl mx-auto text-center">
-            <p className="text-4xl md:text-5xl lg:text-6xl text-gray-300 font-bold leading-relaxed">
-                모든 사람이 정보를 더 쉽게 관리하고<br />
-                활용할 수 있는 세상을 만듭니다
-            </p>
+            <div className="max-w-5xl mx-auto text-center">
+                <p className="text-3xl md:text-4xl lg:text-5xl text-gray-300 font-bold leading-tight">
+                    모든 사람이 정보를 더 쉽게 관리하고<br />
+                    활용할 수 있는 세상을 만듭니다
+                </p>
             </div>
         </div>
         {/* 이미지 출처 */}
