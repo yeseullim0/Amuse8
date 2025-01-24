@@ -29,7 +29,7 @@ const CompanyPage = () => {
         {/* 배경 이미지 */}
         <div className="absolute inset-0">
             <img 
-              src="/images/Company.jpg"
+              src="/images/Company2.jpg"
               alt="Company Background" 
               className="w-full h-full object-cover"
               loading="eager"
